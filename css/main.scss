@@ -1,0 +1,222 @@
+//# Front-end Style Guide
+
+//## Layout
+
+//The designs were created to the following widths:
+
+//- Mobile: 375px
+//- Desktop: 1440px
+
+//## Colors
+
+//### Primary
+
+$Cyan: hsl(179, 62%, 43%);
+$Bright_Yellow: hsl(71, 73%, 54%);
+$off-cyan: hsla(179, 62%, 43%, 0.699);
+//### Neutral
+
+$Light_Gray: hsl(204, 43%, 93%);
+$Grayish_Blue: hsl(218, 22%, 67%);
+
+//## Typography
+
+//### Body Copy
+
+$font_size: 1.5rem;
+
+//### Font
+$family_karla: 'Karla', sans-serif;
+;
+// [Karla](https://fonts.google.com/specimen/Karla) ;
+//Weights: 400, 700
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    background-color: $Light_Gray;
+    display: flex;
+    font-size: $font_size;
+    font-family: $family_karla;
+
+    main {
+        width: 100%;
+        height: 90%;
+        background-color: $Light_Gray;
+        display: grid;
+        align-items: center;
+        margin: auto;
+        margin-top:50px ;
+        margin-bottom: 50px;
+        justify-content: center;
+        grid-template-columns: 90%;
+        grid-template-rows: 250px 250px 250px;
+        max-width: 400px;
+        // margin-bottom: 205px;
+        section {
+            width: 100%;
+            height: 100%;
+            padding: 25px;
+
+            .p_subtitle {
+                font-size: 1.8rem;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+
+            p {
+                line-height: 25px;
+            }
+        }
+
+
+        .sect--up {
+            background-color: white;
+            border-radius: 5px 5px 0px 0px;
+
+            .p_subtitle {
+                color: $Cyan;
+            }
+
+            :nth-child(2) {
+                color: $Bright_Yellow;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+
+            :nth-child(3) {
+                color: $Grayish_Blue;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+        }
+
+        .sect--middle {
+            background-color: $Cyan;
+            color: $Light_Gray;
+
+            :nth-child(2) {
+                color: white;
+                font-weight: 700;
+                margin-bottom: 15px;
+                font-size: 3rem;
+
+                span {
+                    font-size: $font_size;
+                    font-weight: 400;
+                    color: $Light_Gray;
+                    margin-left: 10px;
+                }
+            }
+
+            :nth-child(3) {
+                color: $Light_Gray;
+                font-weight: 700;
+                margin-bottom: 15px;
+                margin-bottom: 40px;
+            }
+
+            button {
+                color: white;
+                font-family: $family_karla;
+                font-size: $font_size;
+                font-weight: 700;
+                font-size: $font_size;
+                width: 100%;
+                height: 50px;
+                border-radius: 5px;
+                border-style: none;
+                background-color: $Bright_Yellow;
+                letter-spacing: 1px;
+                box-shadow: -2px 8px 40px -15px black;
+                cursor: pointer;
+                &:hover{
+
+                  
+                    background-color: white;
+                    color: $Bright_Yellow;
+                }
+                &:active{
+
+                    transform: scale(0.95);
+                    transition: .1s;
+               
+                }
+            }
+        }
+
+        .sect--down {
+            background-color: $off-cyan;
+            color: white;
+            border-radius: 0px 0px 5px 5px;
+
+            ul {
+                color: $Light_Gray;
+
+                list-style: none;
+
+                li {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+
+
+
+
+    }
+}
+
+@media(min-width:1440px) {
+
+
+    body {
+        margin: auto;
+height: 100vh;
+transition: all .3s ease-in;
+        main {
+            width: 100%;
+            margin: auto;
+            height: fit-content;
+            grid-template-columns: 350px 350px;
+            grid-template-rows: 250px 250px;
+            justify-content: center;
+            align-items: center;
+
+            section{
+                padding: 35px;
+            }
+            .sect--up {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .sect--middle{
+                border-radius: 0px 0px 0px 5px;
+                :nth-child(3) {
+                    color: $Light_Gray;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                    margin-bottom: 30px;
+                }
+            }
+            .sect--down{
+                border-radius: 0px 0px 5px 0px;
+            }
+                   
+
+        }
+    }
+}

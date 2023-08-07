@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  font-size: 1.5rem;
+  font-family: "Karla", sans-serif;
+}
+body main {
+  width: 100%;
+  height: 90%;
+  background-color: hsl(204, 43%, 93%);
+  display: grid;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  grid-template-columns: 90%;
+  grid-template-rows: 250px 250px 250px;
+  max-width: 400px;
+}
+body main section {
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+}
+body main section .p_subtitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+body main section p {
+  line-height: 25px;
+}
+body main .sect--up {
+  background-color: white;
+  border-radius: 5px 5px 0px 0px;
+}
+body main .sect--up .p_subtitle {
+  color: hsl(179, 62%, 43%);
+}
+body main .sect--up :nth-child(2) {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+body main .sect--up :nth-child(3) {
+  color: hsl(218, 22%, 67%);
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+body main .sect--middle {
+  background-color: hsl(179, 62%, 43%);
+  color: hsl(204, 43%, 93%);
+}
+body main .sect--middle :nth-child(2) {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 3rem;
+}
+body main .sect--middle :nth-child(2) span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: hsl(204, 43%, 93%);
+  margin-left: 10px;
+}
+body main .sect--middle :nth-child(3) {
+  color: hsl(204, 43%, 93%);
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-bottom: 40px;
+}
+body main .sect--middle button {
+  color: white;
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: hsl(71, 73%, 54%);
+  letter-spacing: 1px;
+  box-shadow: -2px 8px 40px -15px black;
+  cursor: pointer;
+}
+body main .sect--middle button:hover {
+  background-color: white;
+  color: hsl(71, 73%, 54%);
+}
+body main .sect--middle button:active {
+  transform: scale(0.95);
+  transition: 0.1s;
+}
+body main .sect--down {
+  background-color: hsla(179, 62%, 43%, 0.699);
+  color: white;
+  border-radius: 0px 0px 5px 5px;
+}
+body main .sect--down ul {
+  color: hsl(204, 43%, 93%);
+  list-style: none;
+}
+body main .sect--down ul li {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 1440px) {
+  body {
+    margin: auto;
+    height: 100vh;
+    transition: all 0.3s ease-in;
+  }
+  body main {
+    width: 100%;
+    margin: auto;
+    height: -moz-fit-content;
+    height: fit-content;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 250px 250px;
+    justify-content: center;
+    align-items: center;
+  }
+  body main section {
+    padding: 35px;
+  }
+  body main .sect--up {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body main .sect--middle {
+    border-radius: 0px 0px 0px 5px;
+  }
+  body main .sect--middle :nth-child(3) {
+    color: hsl(204, 43%, 93%);
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-bottom: 30px;
+  }
+  body main .sect--down {
+    border-radius: 0px 0px 5px 0px;
+  }
+}/*# sourceMappingURL=main.css.map */
